@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Crumbs | Cake Shop</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #fff8f5;
+        color: #3d2925;
+    }
+
+    header {
+        background: #ffffff;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: #c45a75;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #3d2925;
+        margin-left: 25px;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: #c45a75;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 80px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        background: linear-gradient(135deg, #fff0f3, #ffe5d9);
+    }
+
+    .hero-text {
+        max-width: 550px;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+        color: #c45a75;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        color: #6b514b;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        background: #c45a75;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #a9435d;
+    }
+
+    .cake-icon {
+        font-size: 180px;
+        background: white;
+        width: 330px;
+        height: 330px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    .section {
+        padding: 70px 8%;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+        color: #806660;
+        margin-bottom: 40px;
+    }
+
+    .cakes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .cake-card {
+        background: white;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        transition: transform 0.3s;
+    }
+
+    .cake-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .cake-image {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    .cake-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .cake-card p {
+        color: #806660;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        color: #c45a75;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .about {
+        background: #fff0f3;
+    }
+
+    .about p {
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.8;
+        color: #6b514b;
+        font-size: 17px;
+    }
+
+    footer {
+        background: #3d2925;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+        }
+
+        .cake-icon {
+            width: 230px;
+            height: 230px;
+            font-size: 120px;
+        }
+
+        .cakes {
+            grid-template-columns: 1fr;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <div class="logo">🍰 Sweet Crumbs</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Made with love, <span>baked with joy.</span></h1>
+
+        <p>
+            Freshly baked cakes, cupcakes and desserts made
+            specially for your happiest moments.
+        </p>
+
+        <a href="#cakes" class="btn">Explore Our Cakes</a>
+    </div>
+
+    <div class="cake-icon">
+        🎂
+    </div>
+
+</section>
+
+<section class="section" id="cakes">
+
+    <h2>Our Best Sellers</h2>
+
+    <p class="section-subtitle">
+        A little sweetness for every celebration.
+    </p>
+
+    <div class="cakes">
+
+        <div class="cake-card">
+            <div class="cake-image">🍓</div>
+            <h3>Strawberry Dream</h3>
+            <p>Fresh strawberries with creamy vanilla frosting.</p>
+            <div class="price">₹699</div>
+        </div>
+
+        <div class="cake-card">
+            <div class="cake-image">🍫</div>
+            <h3>Chocolate Heaven</h3>
+            <p>Rich chocolate cake covered with smooth ganache.</p>
+            <div class="price">₹799</div>
+        </div>
+
+        <div class="cake-card">
+            <div class="cake-image">🧁</div>
+            <h3>Birthday Special</h3>
+            <p>A colorful celebration cake made for special days.</p>
+            <div class="price">₹899</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section about" id="about">
+
+    <h2>Why Sweet Crumbs?</h2>
+
+    <p>
+        We believe every celebration deserves something sweet.
+        Our cakes are freshly baked using quality ingredients
+        and lots of love. From birthdays to anniversaries,
+        we make every moment a little more special.
+    </p>
+
+</section>
+
+<section class="section" id="contact">
+
+    <h2>Ready to Order?</h2>
+
+    <p class="section-subtitle">
+        Let's make your celebration sweeter!
+    </p>
+
+    <a href="mailto:hello@sweetcrumbs.com" class="btn">
+        Contact Us
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Sweet Crumbs Cake Shop | Made with ❤️</p>
+</footer>
+```
+
+</body>
+</html>
